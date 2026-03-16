@@ -104,5 +104,6 @@ Edit src/data/domains.js — each domain has id, title, description, icon, color
 | react + react-dom | UI framework |
 | framer-motion ^11 | All animations |
 | canvas-confetti ^1.9 | Final celebration |
-| tailwindcss ^3.4 | Styling utilities |
 | vite ^5 | Build tool |
+
+# GDG-HACKATHON
