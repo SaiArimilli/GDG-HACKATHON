@@ -107,3 +107,7 @@ Edit src/data/domains.js — each domain has id, title, description, icon, color
 | vite ^5 | Build tool |
 
 # GDG-HACKATHON
+
+---
+
+&copy; 2024 @SaiArimilli. All rights reserved.
