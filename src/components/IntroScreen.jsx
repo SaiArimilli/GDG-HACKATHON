@@ -202,7 +202,7 @@ export default function IntroScreen({ onStart }) {
         className="absolute bottom-8 font-mono text-xs tracking-widest"
         style={{ color: 'rgba(255,255,255,0.2)', letterSpacing: '0.2em' }}
       >
-        456 PLAYERS · NEW RULES · 1 WINNER
+        320 PLAYERS · NEW RULES · 3 WINNERS
       </motion.div>
     </motion.div>
   );

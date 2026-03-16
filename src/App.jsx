@@ -35,7 +35,7 @@ export default function App() {
 
       {/* Global Footer element */}
       <div className="fixed bottom-4 right-6 z-50 font-mono text-xs tracking-widest pointer-events-none" style={{ color: 'rgba(255,255,255,0.3)', letterSpacing: '0.15em' }}>
-        &copy; 2026 @SaiArimilli
+        @SaiArimilli
       </div>
     </div>
   );
