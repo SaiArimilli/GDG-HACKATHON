@@ -65,7 +65,7 @@ export default function DomainReveal() {
           }
           return next;
         });
-      }, 1500);
+      }, 3000);
     }
     return () => clearTimeout(intervalRef.current);
   }, [revealedCount, isPaused]);

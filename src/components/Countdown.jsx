@@ -2,9 +2,11 @@ import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import FloatingShapes from './FloatingShapes';
 
-const sequence = ['3', '2', '1', 'BEGIN'];
+const sequence = ['5', '4', '3', '2', '1', 'BEGIN'];
 
 const colorForStep = {
+  '5': { color: '#3b82f6', glow: 'rgba(59,130,246,0.6)' },
+  '4': { color: '#f59e0b', glow: 'rgba(245,158,11,0.6)' },
   '3': { color: '#ef4444', glow: 'rgba(239,68,68,0.6)' },
   '2': { color: '#167a5b', glow: 'rgba(22,122,91,0.6)' },
   '1': { color: '#ed1b76', glow: 'rgba(237,27,118,0.6)' },
@@ -26,7 +28,7 @@ export default function Countdown({ onComplete }) {
     setFlash(true);
     const flashTimer = setTimeout(() => setFlash(false), 150);
 
-    const duration = step === sequence.length - 1 ? 1400 : 900;
+    const duration = step === sequence.length - 1 ? 2000 : 1500;
     const timer = setTimeout(() => {
       if (step < sequence.length - 1) {
         setStep(s => s + 1);
@@ -152,7 +154,7 @@ export default function Countdown({ onComplete }) {
 
       {/* Step indicators */}
       <div className="absolute bottom-12 flex gap-4">
-        {sequence.slice(0, 3).map((_, i) => (
+        {sequence.slice(0, 5).map((_, i) => (
           <motion.div
             key={i}
             className="w-3 h-3 rounded-full"
